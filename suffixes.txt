@@ -1,7 +1,9 @@
+arc
 bot
 brid
 cat
 cell
+con
 chrome
 dex
 dog
@@ -10,14 +12,17 @@ drome
 grid
 hax
 hex
+link
 lite
 lith
 logic
 lux
 machine
 mancer
+master
 maton
 mech
+mod
 net
 next
 nexus
@@ -26,6 +31,7 @@ spec
 sphere
 tech
 trance
+trix
 tron
 wolf
 viper

@@ -1,3 +1,6 @@
+2000
+Agent
+Alpha
 Assassin
 Circuit
 DX
@@ -5,8 +8,15 @@ Cyborg
 Hacker
 Jester
 Lightning
+Matrix
+One
+Prime
 Shadow
 Snake
 Steel
 Stingray
+Storm
+Synapse
+Vector
 X
+Zero
