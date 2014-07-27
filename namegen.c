@@ -46,6 +46,11 @@ void NameGenInit(
 static void LoadFile(CArray *strings, const char *filename)
 {
 	FILE *file = fopen(filename, "r");
+	if (file == NULL)
+	{
+		perror("Cannot open file for name gen\n");
+		return;
+	}
 	char buf[256];
 	while (fgets(buf, 256, file) != NULL)
 	{
@@ -76,6 +81,12 @@ static void UnloadStrings(CArray *strings)
 static bool IsSameWord(const char *l, const char *r);
 void NameGenMake(const NameGen *g, char *buf)
 {
+	if (g->prefixes.size == 0 || (g->suffixes.size + g->suffixNames.size) == 0)
+	{
+		perror("Not enough names for name gen\n");
+		strcpy(buf, "");
+		return;
+	}
 	for (;;)
 	{
 		char **prefix = CArrayGet(&g->prefixes, rand() % g->prefixes.size);
