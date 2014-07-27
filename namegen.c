@@ -74,7 +74,7 @@ static void UnloadStrings(CArray *strings)
 }
 
 static bool IsSameWord(const char *l, const char *r);
-void NameGenMake(const NameGen *g, const char *buf)
+void NameGenMake(const NameGen *g, char *buf)
 {
 	for (;;)
 	{

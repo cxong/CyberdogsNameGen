@@ -39,6 +39,6 @@ void NameGenInit(
 	NameGen *g,
 	const char *prefixFile, const char *suffixFile, const char *suffixNameFile);
 void NameGenTerminate(NameGen *g);
-void NameGenMake(const NameGen *g, const char *buf);
+void NameGenMake(const NameGen *g, char *buf);
 
 #endif
